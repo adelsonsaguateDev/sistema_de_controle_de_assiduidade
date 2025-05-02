@@ -14,7 +14,3 @@ Route::get('/home',  [DashboardController::class, 'index'])->name('pagina_inicia
 Route::post('/autenticar', [LoginController::class, 'autenticar'])->name('autenticar');
 
 
-
-Route::get('/', function () {
-    return view('auth.login');
-});

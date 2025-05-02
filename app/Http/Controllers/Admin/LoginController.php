@@ -31,7 +31,7 @@ class LoginController extends Controller
 
             // Guardar permissões na sessão
             session([
-                'nome_utilizador' => (string)$user->nome.$user->apelido,
+                'nome_utilizador' => (string)$user->nome." ".$user->apelido,
                 'tipo_utilizador' => $user->tipoUtilizador->nome,
                 'email_utilizador' => $user->email,
                 'permissoes' => [

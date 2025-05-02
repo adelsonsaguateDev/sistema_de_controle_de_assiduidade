@@ -35,13 +35,6 @@
     <link rel="stylesheet" href="{{ asset('dist-assets/css/preloader.css') }}" />
     <!-- favicon -->
     <link href="{{ asset('dist-assets/css/flatpickr.min.css') }}" rel="stylesheet">
-
-    <!-- Icons fontawesome
-        ============================================ -->
-
-    <link rel="stylesheet" href="{{ asset('css/icons/font-awesome/css/font-awesome.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/icons/font-awesome/css/font-awesome.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/icons/themify-icons/themify-icons.css') }}">
     <link rel="stylesheet" href="{{ asset('dist-assets/css/preloader.css')}}" />
 
     <!-- Script geral -->
@@ -51,6 +44,8 @@
     <script src="{{ asset('dist-assets/select2/js/lodash.min.js') }}"></script>
     <script src="{{ asset('dist-assets/select2/js/select22.min.js') }}"></script>
     <script src="{{ asset('dist-assets/js/toastr.min.js') }}"></script>
+    <script src="{{ asset('dist-assets/js/plugins/jquery-3.7.1.min.js')}}"></script>
+
 
 
     {{--  pdf  --}}

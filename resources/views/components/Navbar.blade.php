@@ -66,9 +66,7 @@
                                             <h5 class="text-body mb-2">UI/UX Design</h5>
                                             <p class="mb-0">
                                                 Lorem Ipsum has been the industry's standard dummy
-                                                text ever since the 1500s, when an unknown printer
-                                                took a galley of type and scrambled it to make a
-                                                type
+
                                             </p>
                                         </div>
                                     </div>
@@ -88,8 +86,7 @@
                                             <span class="float-end text-sm text-muted">2 hour ago</span>
                                             <h5 class="text-body mb-2">Forms</h5>
                                             <p class="mb-0">
-                                                Lorem Ipsum has been the industry's standard dummy
-                                                text ever since the 1500s, when an unknown printer
+
                                                 took a galley of type and scrambled it to make a
                                                 type
                                             </p>
@@ -110,7 +107,7 @@
                                             <span class="float-end text-sm text-muted">5 hour ago</span>
                                             <h5 class="text-body mb-2">Security</h5>
                                             <p class="mb-0">
-                                                Lorem Ipsum has been the industry's standard dummy
+
                                                 text ever since the 1500s, when an unknown printer
                                                 took a galley of type and scrambled it to make a
                                                 type
@@ -151,23 +148,20 @@
                                 <a href="#" class="dropdown-item"><span><svg class="pc-icon text-muted me-2">
                                             <use xlink:href="#custom-setting-outline"></use>
                                         </svg>
-                                        <span>Settings</span>
-                                    </span></a><a href="#" class="dropdown-item"><span><svg
-                                            class="pc-icon text-muted me-2">
-                                            <use xlink:href="#custom-share-bold"></use>
-                                        </svg>
-                                        <span>Share</span>
-                                    </span></a><a href="#" class="dropdown-item"><span><svg
-                                            class="pc-icon text-muted me-2">
+                                        <span>Definições</span>
+                                    </span>
+                                </a>
+
+                                <a href="#" class="dropdown-item"><span><svg class="pc-icon text-muted me-2">
                                             <use xlink:href="#custom-lock-outline"></use>
                                         </svg>
-                                        <span>Change Password</span></span></a>
+                                        <span>Alterar Senha</span></span>
+                                </a>
                                 <hr class="border-secondary border-opacity-50" />
-                                <div class="d-grid mb-3">
+                                <div class="d-grid mb-3 col-12">
                                     <a href="/">
-                                        <button class="btn btn-primary">
-
-                                            Sair
+                                        <button class="btn btn-primary col-12">
+                                            Terminar a sessão
                                         </button>
                                     </a>
                                 </div>
