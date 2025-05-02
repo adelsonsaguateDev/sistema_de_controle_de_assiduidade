@@ -6,7 +6,7 @@
 // Configurações Globais
 const CONFIG = {
     // Duração padrão para mensagens de toast/alerta (em ms)
-    messageDuration: 2000,
+    messageDuration: 3000,
     // Texto padrão para campos obrigatórios
     requiredFieldMessage: "Este campo é obrigatório",
 };
@@ -37,7 +37,6 @@ function initFormHandlers() {
             formId: "form_actualizar_tipo_utilizador",
             endpoint: "tipo_utilizador/edit",
         },
-
     ];
 
     // Adiciona os event listeners para cada mapeamento
@@ -140,10 +139,6 @@ async function handleFormSubmission(e, formId, endpoint) {
 
         // Processa a resposta
         if (response.success) {
-            await showSuccessMessage(
-                response.message || "Operação concluída com sucesso!"
-            );
-
             // Ações específicas pós-submissão
             handlePostSubmissionActions(formId, response);
         } else {
@@ -189,25 +184,29 @@ async function showSuccessMessage(message) {
 function handlePostSubmissionActions(formId, response) {
     // Mapeamento de formulários para ações pós-submissão
     const postSubmissionActions = {
-        form_registrar_provincia: () => {
-            $("#rg-provincia").modal("hide");
-            window.location.reload();
+        form_registrar_utilizador: () => {
+            $("#rg_utilizador").modal("hide");
+
+            showSuccessMessage(
+                response.message || "Operação concluída com sucesso!"
+            );
+            
+            setTimeout(() => {
+                window.location.reload();
+            }, CONFIG.messageDuration); 
         },
-        form_editar_provincia: () => {
-            $("#edit-provincia").modal("hide");
-            window.location.reload();
+        form_editar_utilizador: () => {
+            $("#editUtilizadorModal").modal("hide");
+
+            showSuccessMessage(
+                response.message || "Operação concluída com sucesso!"
+            );
+            
+            setTimeout(() => {
+                window.location.reload();
+            }, CONFIG.messageDuration); 
         },
-        form_registrar_distrito: () => {
-            $("#rg-distrito").modal("hide");
-            window.location.reload();
-        },
-        form_registrar_vaga: () => {
-            $("#rg_vaga").modal("hide");
-            window.location.reload();
-        },
-        form_funcionario_update: () => {
-            location.assign("listagem_funcionarios.php");
-        },
+
         // Ação padrão - recarregar a página
         default: () => {
             window.location.reload();

@@ -39,8 +39,9 @@
     <script src="{{ asset('dist-assets/js/plugins/jquery-3.7.1.min.js')}}"></script>
     <script src="{{ asset('dist-assets/js/flatpickr.js')}}"></script>
     <script src="{{ asset('js/scripts.js') }}"></script>
-    <script src="{{ asset('dist-assets/js/scripts/sweetalert2@11.js') }}"></script>
-    <script src="{{ asset('dist-assets/js/scripts/sweetalert.script.min.js') }}"></script>
+    <script src="{{ asset('assets/js/plugins/sweetalert2.all.min.js') }}"></script>
+    {{-- <script src="{{ asset('dist-assets/js/scripts/sweetalert2@11.js') }}"></script>
+    <script src="{{ asset('dist-assets/js/scripts/sweetalert.script.min.js') }}"></script> --}}
     <script src="{{ asset('dist-assets/js/toastr.min.js') }}"></script>
 
 

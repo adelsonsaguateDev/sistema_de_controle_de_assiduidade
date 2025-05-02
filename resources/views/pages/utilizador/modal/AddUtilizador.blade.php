@@ -1,13 +1,13 @@
 <!-- Modal -->
-<div class="modal fade" id="rg_utilizador" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-    aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
+<div class="modal fade" id="rg_utilizador" tabindex="-1" data-bs-keyboard="false" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalCenterTitle">Registro do Utilizador</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+            <div class="modal-header justify-content-between">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Registo do Utilizador</h5>
+                <div class="d-flex align-items-center justify-content-end">
+                    <a href="#" class="avtar avtar-s btn-link-danger" data-bs-dismiss="modal"
+                        data-bs-toggle="tooltip" title="Close"><i class="ti ti-x f-20"></i></a>
+                </div>
             </div>
             <div class="modal-body">
                 <div class="row">
@@ -87,7 +87,7 @@
                 </div>
             </div> {{-- end modal body --}}
             <div class="modal-footer">
-                <button class="btn btn-danger" type="button" data-dismiss="modal">Fechar</button>
+                <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Fechar</button>
                 <button class="btn btn-success ml-2" id="registrar_utilizador" type="button">Submeter</button>
             </div>
         </div>

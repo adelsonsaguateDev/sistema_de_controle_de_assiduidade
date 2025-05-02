@@ -6,6 +6,8 @@
 
     @include('components.Sidebar')
     @include('components.Navbar')
+    @include('pages.utilizador.modal.AddUtilizador')
+    @include('pages.utilizador.modal.form_edit')
 
 
     <div class="pc-container">
@@ -40,10 +42,11 @@
                                                 EXCEL</a>
                                         </div>
                                     </div>
-                                    <button type="button" data-toggle="modal" data-target="#rg_utilizador"
-                                        class="btn btn-success btn-lg ml-2">
-                                        <i class="ti ti-plus"></i> Novo Utilizador
+                                    <button data-bs-toggle="modal" data-bs-target="#rg_utilizador"
+                                        class="btn btn-outline-success btn-lg ml-2">
+                                        <i class="ph-duotone ph-plus-circle"></i> Novo Utilizador
                                     </button>
+                                   
                                 </div>
                             </div>
                             <div class="tab-border"></div>
@@ -93,6 +96,7 @@
             <!-- [ Main Content ] end -->
         </div>
     </div>
+
     <!-- [ Main Content ] end -->
     @include('components.Footer')
 
@@ -102,7 +106,6 @@
     <script>
         $(document).ready(function() {
             $(".utilizadores_list").addClass("active")
-
             
             var limite = $('#limit').val()
             var page = 1
@@ -165,7 +168,7 @@
 
                 Swal.fire({
                     title: 'ALERTA!',
-                    text: "Tem certeza que deseja apagar o funcionario?",
+                    text: "Tem certeza que deseja apagar?",
                     icon: 'warning',
                     showCancelButton: true,
                     confirmButtonColor: '#0CC27E',
@@ -180,9 +183,7 @@
                 }).then((result) => {
                     if (result.isConfirmed) {
                         update_estado(utilizador_id, estado);
-                    } else if (result.dismiss === Swal.DismissReason.cancel) {
-                        Swal.fire('', 'Operação foi cancelada!', 'warning');
-                    }
+                    } 
                 });
 
 
@@ -277,7 +278,7 @@
 
                 Swal.fire({
                     title: 'ALERTA!',
-                    text: "Tem certeza que deseja activar o funcionario?",
+                    text: "Tem certeza que deseja activar?",
                     icon: 'warning',
                     showCancelButton: true,
                     confirmButtonColor: '#0CC27E',

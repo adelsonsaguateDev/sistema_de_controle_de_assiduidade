@@ -18,7 +18,7 @@
                         @csrf
                         <div class="mb-3">
                             <input id="username" name="username" type="text"
-                                class="form-control @error('username') is-invalid @enderror" value="" required
+                                class="form-control @error('username') is-invalid @enderror" value="" 
                                 autocomplete="" autofocus placeholder="Nome do Utilizador">
                             @error('username')
                                 <span class="invalid-feedback" role="alert">
@@ -29,7 +29,7 @@
                         <div class="mb-3">
                             <input id="password" name="password" type="password"
                                 class="form-control @error('password') is-invalid @enderror" name="password" value=""
-                                required autocomplete="" placeholder="Digite a senha">
+                                 autocomplete="" placeholder="Digite a senha">
                             @error('password')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
