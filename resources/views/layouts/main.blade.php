@@ -26,8 +26,6 @@
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/style-preset.css') }}">
 
-    <link rel="stylesheet" href="{{ asset('dist-assets/select2/css/select22.min.css') }}" />
-    <link rel="stylesheet" href="{{ asset('dist-assets/select2-bootstrap4-theme/select2-bootstrap.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('dist-assets/css/toastr.min.css') }}">
 
 
@@ -38,13 +36,12 @@
     <link rel="stylesheet" href="{{ asset('dist-assets/css/preloader.css')}}" />
 
     <!-- Script geral -->
+    <script src="{{ asset('dist-assets/js/plugins/jquery-3.7.1.min.js')}}"></script>
+    <script src="{{ asset('dist-assets/js/flatpickr.js')}}"></script>
     <script src="{{ asset('js/scripts.js') }}"></script>
     <script src="{{ asset('dist-assets/js/scripts/sweetalert2@11.js') }}"></script>
     <script src="{{ asset('dist-assets/js/scripts/sweetalert.script.min.js') }}"></script>
-    <script src="{{ asset('dist-assets/select2/js/lodash.min.js') }}"></script>
-    <script src="{{ asset('dist-assets/select2/js/select22.min.js') }}"></script>
     <script src="{{ asset('dist-assets/js/toastr.min.js') }}"></script>
-    <script src="{{ asset('dist-assets/js/plugins/jquery-3.7.1.min.js')}}"></script>
 
 
 
@@ -85,9 +82,11 @@
     <script src="{{ asset('assets/js/plugins/i18nextHttpBackend.min.js') }}"></script>
     <script src="{{ asset('assets/js/icon/custom-font.js') }}"></script>
     <script src="{{ asset('assets/js/script.js') }}"></script>
+    <script src="{{ asset('assets/js/select.js') }}"></script>
     <script src="{{ asset('assets/js/theme.js') }}"></script>
     <script src="{{ asset('assets/js/multi-lang.js') }}"></script>
     <script src="{{ asset('assets/js/plugins/feather.min.js') }}"></script>
+    <script src="{{ asset('assets/js/plugins/choices.min.js') }}"></script>
     <script>
         layout_change("light");
     </script>
