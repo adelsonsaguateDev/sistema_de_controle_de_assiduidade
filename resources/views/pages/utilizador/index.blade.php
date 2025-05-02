@@ -31,7 +31,7 @@
                                 </div>
                                 <div class="col-md-12 text-right" style="text-align: right">
                                     <div class="btn-group">
-                                        <button class="btn btn-linkedin btn-lg dropdown-toggle" type="button"
+                                        <button class="btn btn-linkedin btn-lg dropdown-toggle" id="print" type="button"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <i class="ti ti-bookmark"></i> Exportar
                                         </button>

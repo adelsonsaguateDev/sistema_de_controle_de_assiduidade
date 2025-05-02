@@ -10,7 +10,7 @@ $dataFim = isset($_SESSION['dataFim'] ) ? $_SESSION['dataFim'] : "";
 $dataImpressao = date('d/m/Y H:i:s');
 $nome = isset($_SESSION['nome']) ? $_SESSION['nome'] : "";
 $apelido = isset($_SESSION['apelido']) ? $_SESSION['apelido'] : "";
-$nome_completo = $nome." ".$apelido." Adelson Saguate";
+$nome_completo = $nome." ".$apelido." Admin";
 
 
 $parametro1 = isset($_SESSION['parametro1']) ? $_SESSION['parametro1'] : "";
@@ -51,9 +51,9 @@ $parametro4 = isset($_SESSION['parametro4'] ) ? $_SESSION['parametro4'] : "";
                 <div class="invoice-desc" style="text-align: center; padding-top: 0; margin-top: 0">
                     <img style="width: 80px" src="./img/logo_up.png" alt="Logo"><br><br>
                     
-                    SISTEMA DE GESTÃO DE LOCALIZAÇÃO DAS SALAS<br/>
-                    Universidade Pedagógica de Maputo<br/>
-                    Email: findsala.up@ac.mz
+                    SISTEMA DE CONTROLE DE ASSIDUIDADE<br/>
+                    Empresa<br/>
+                    Email: email@gmail.com
                 </div>
             </td>
         </tr>
