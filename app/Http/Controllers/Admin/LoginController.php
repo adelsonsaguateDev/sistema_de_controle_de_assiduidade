@@ -31,7 +31,7 @@ class LoginController extends Controller
 
             // Guardar permissões na sessão
             session([
-                'nome_utilizador' => (string)$user->nome." ".$user->apelido,
+                'nome_utilizador' => (string)$user->nome . " " . $user->apelido,
                 'tipo_utilizador' => $user->tipoUtilizador->nome,
                 'email_utilizador' => $user->email,
                 'permissoes' => [
@@ -50,11 +50,20 @@ class LoginController extends Controller
         }
     }
 
-    public function logout()
-    {
+    // public function logout()
+    // {
 
-        session_unset();
-        session_destroy();
-        return view('auth.login');
+    //     session_unset();
+    //     session_destroy();
+    //     return view('auth.login');
+    // }
+
+    public function logout(Request $request)
+    {
+        Auth::logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+
+        return redirect()->route('login')->with('status', 'Sessão encerrada com sucesso.');
     }
 }
