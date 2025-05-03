@@ -50,20 +50,13 @@ class LoginController extends Controller
         }
     }
 
-    // public function logout()
-    // {
-
-    //     session_unset();
-    //     session_destroy();
-    //     return view('auth.login');
-    // }
-
-    public function logout(Request $request)
+    public function logout()
     {
-        Auth::logout();
-        $request->session()->invalidate();
-        $request->session()->regenerateToken();
 
-        return redirect()->route('login')->with('status', 'Sessão encerrada com sucesso.');
+        session_unset();
+        session_destroy();
+        return view('auth.login');
     }
+
+   
 }
