@@ -47,7 +47,7 @@
 
                 @if (session('tipo_utilizador') == 'admin' || session('tipo_utilizador') == 'gestor')
                     <li class="pc-item pc-hasmenu colaboradores_list">
-                        <a href="{{ route('colaboradores.index') }}" class="pc-link"><span class="pc-micon"><svg
+                        <a href="#" class="pc-link"><span class="pc-micon"><svg
                                     class="pc-icon">
                                     <use xlink:href="#custom-user"></use>
                                 </svg> </span><span class="pc-mtext" data-i18n="Colaboradores">Colaboradores</span>
@@ -66,20 +66,20 @@
                 @endif
 
                 <li class="pc-item pc-hasmenu ponto_list">
-                    <a href="{{ route('ponto.index') }}" class="pc-link"><span class="pc-micon"><svg class="pc-icon">
+                    <a href="#" class="pc-link"><span class="pc-micon"><svg class="pc-icon">
                                 <use xlink:href="#custom-document-filter"></use>
                             </svg> </span><span class="pc-mtext" data-i18n="Registro de Ponto">Registro de
                             Ponto</span></a>
                 </li>
 
                 <li class="pc-item pc-hasmenu folgas_list">
-                    <a href="{{ route('folgas.index') }}" class="pc-link"><span class="pc-micon"><svg class="pc-icon">
+                    <a href="#" class="pc-link"><span class="pc-micon"><svg class="pc-icon">
                                 <use xlink:href="#custom-document-filter"></use>
                             </svg> </span><span class="pc-mtext" data-i18n="Folgas">Folgas</span></a>
                 </li>
 
                 <li class="pc-item pc-hasmenu relatorios_list">
-                    <a href="{{ route('relatorios.index') }}" class="pc-link"><span class="pc-micon"><svg
+                    <a href="#" class="pc-link"><span class="pc-micon"><svg
                                 class="pc-icon">
                                 <use xlink:href="#custom-presentation-chart"></use>
                             </svg> </span><span class="pc-mtext" data-i18n="Relatórios">Relatórios</span>
@@ -88,7 +88,7 @@
 
                 @if (session('tipo_utilizador') == 'admin')
                     <li class="pc-item pc-hasmenu parametrizacoes_list">
-                        <a href="{{ route('parametrizacoes.index') }}" class="pc-link"><span class="pc-micon"><svg
+                        <a href="#" class="pc-link"><span class="pc-micon"><svg
                                     class="pc-icon">
                                     <use xlink:href="#custom-setting-outline"></use>
                                 </svg> </span><span class="pc-mtext"
